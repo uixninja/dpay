@@ -1,0 +1,153 @@
+@import 'mixins';
+@import 'fonts';
+
+
+body {
+    font-family: "Poppins", Arial, Verdana, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+img {
+    outline: none;
+    border: none;
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+html, 
+body {
+    margin:0; 
+    padding:0; 
+    height:100%;
+    font-size: 11px;
+    font-family: "Poppins", Arial, Verdana, sans-serif;    
+}
+
+.container {
+    position: relative;	
+    min-height:100%;
+}
+
+* {
+    margin:0px; 
+    padding:0px;
+}
+
+.centered {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1140px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+.btn {
+    height: 56px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 28px;
+    line-height: 56px;
+    min-width: 185px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: 0.3s all;
+    @include gradient-top(#505cff, #4892ff);
+    @include box-shadow(0px -13px 32px 0px rgba(123, 158, 255, 0.17));
+
+    span, img {
+        vertical-align: middle;
+    }
+
+    img {
+        margin-right: 10px;
+        margin-top: -4px;
+    }
+
+    &.pink {
+        @include gradient-top(#ff76b9, #ff94bb);
+        @include box-shadow(0px -13px 32px 0px rgba(255, 148, 179, 0.17));
+
+        &:hover {
+            @include gradient-top(#ff76b9, #ff76b9);
+        }
+
+        &:active {
+            @include gradient-top(#ff94bb, #ff94bb);
+        }
+    }
+    
+    &:hover {
+        //box-shadow: 0 0 15px #57d1c6;
+        @include gradient-top(#505cff, #505cff);
+    }
+
+    &:active {
+        @include gradient-top(#4892ff, #4892ff);
+    }
+}
+
+.end_content {
+    position: relative;
+    height: 650px;
+    clear: both;    
+}
+
+h1 {
+    float: left;
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    font-size: 42px;
+    line-height: 100%;
+}
+
+.explanation {
+    position: relative;
+    max-width: 992px;
+    margin: 0 auto;
+    color: #b2bad5;
+    font-size: 17px;
+    line-height: 31px;
+    padding-top: 40px;
+
+    .picture {
+        padding-top: 30px;
+    }
+}

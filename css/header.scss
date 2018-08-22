@@ -1,0 +1,132 @@
+header {
+    position: relative;
+    z-index: 10;
+    height: 175px;
+    max-width: 1140px;
+    padding: 49px 20px 0 20px;
+    margin: 0 auto;
+
+    .fade {
+        display: none;
+    }
+
+    .responsive_menu {
+        width: 30px;
+        height: 24px;
+        position: absolute;
+        top: 49px;
+        right: 20px;
+        display: none;
+        background: url('../img/menu_responsive.png') no-repeat 0 0;
+        cursor: pointer;
+        z-index: 5;
+    }
+    
+    .logo {
+        float: left;
+        width: 45px;
+
+        img {
+            float: left;
+        }
+    }
+
+    .menu {
+        padding-left: 100px;
+        text-align: right;
+        font-size: 1px;
+
+        .btn {
+            vertical-align: middle;
+
+            &.pink {
+                margin-right: 20px;
+            }
+        }
+
+        > ul {
+            float: none;
+            display: inline-block;
+            list-style: none;
+            vertical-align: middle;
+
+            > li {
+                display: inline-block;
+                font-size: 16px;
+                padding-right: 70px;
+                position: relative;
+                vertical-align: middle;
+
+                &:hover {
+                    padding-bottom: 22px;
+                    padding-top: 21px;
+
+                    > a {
+                        color: #fff;
+
+                        &:after {
+                            border-top: 5px solid #fff;
+                        }
+                    }
+
+                    > ul {
+                        display: block;
+                    }
+                }
+
+                > ul {
+                    width: 217px;
+                    list-style: none;
+                    position: absolute;
+                    top: 100%;
+                    display: none;
+                    left: 0;
+                    text-align: left;
+                    @include gradient-top(#3e496e, #232b45);
+                    padding: 20px 0;
+                    border-radius: 15px;
+
+                    li {
+                        a {
+                            color: #b2bad5;
+                            display: inline-block;
+                            line-height: 56px;
+                            padding: 0 22px;
+                            box-sizing: border-box;
+                            width: 100%;
+                            transition: none;
+
+                            &:hover {
+                                @include gradient-top(#42b4ff, #553cff);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                > span {
+                    color: #808aa8;
+                    text-decoration: none;
+                    transition: 0.4s all;
+                    position: relative;
+                    display: inline-block;
+                    cursor: pointer;
+
+                    &:after {
+                        width: 0;
+                        height: 0;
+                        border-left: 4px solid transparent;
+                        border-right: 4px solid transparent;
+                        border-top: 5px solid #808aa8;
+                        content: "";
+                        position: absolute;
+                        right: -27px;
+                        transition: 0.4s all;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

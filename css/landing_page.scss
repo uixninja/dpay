@@ -1,0 +1,138 @@
+body {
+    background: #272f4a url('../img/bg.jpg') no-repeat 50% 0;
+}
+
+.wallet_app {
+    position: relative;
+    float: left;
+    width: 100%;
+
+    .picture {
+        width: 100%;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .explanation {
+        max-width: 750px;
+        text-align: center;
+    }
+
+    .actions {
+        width: 100%;
+        text-align: center;
+        padding-top: 55px;
+    }
+}
+
+.dpay_app, .store {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 215px;
+
+    .picture {
+        padding-right: 500px;
+
+        img {
+            float: left;
+        }
+    }
+
+    .info {
+        float: right;
+        width: 495px;
+        padding-top: 260px;
+    }
+
+    .actions {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+.hard_wallet {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 275px;
+
+    .centered {
+        overflow: visible;
+    }
+
+    .picture {
+        padding-left: 460px;
+
+        img {
+            float: right;
+            margin-right: -45px;
+        }
+    }
+
+    .info {
+        float: left;
+        width: 460px;
+        padding-top: 50px;
+    }
+
+    .actions {
+        width: 100%;
+        padding-top: 50px;
+
+        .pink {
+            margin-left: 20px;
+        }
+    }
+}
+
+.store {
+    padding-top: 440px;
+
+    .centered {
+        overflow: visible;
+    }
+    
+    .info {
+        padding-top: 100px;
+    }
+
+    .picture {
+        img {
+            margin-left: -95px;
+        }
+    }
+}
+
+.buy {
+    position: relative;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+
+    .centered {
+        overflow: visible;
+    }
+
+    .info {
+        width: 430px;
+        float: left;
+        padding-top: 460px;
+
+        .actions {
+            width: 100%;
+            padding-top: 50px;
+        }
+    }
+
+    .picture {
+        float: right;
+        width: 50%;
+
+        img {
+            float: left;
+        }
+    }
+}
